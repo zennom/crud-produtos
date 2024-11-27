@@ -1,0 +1,29 @@
+{{>partials/header}}
+
+<a href="/cadastro">Adicionar Produtos<a>
+
+<table border="1" width="100%">
+    <tr>
+        <th>ID</th>
+        <th>NOME</th>
+        <th>VALOR</th>
+        <th>QUANTIDADE</th>
+        <th>AÇÕES</th>
+    </tr>
+
+    {{#products}}
+    <tr>
+        <td>{{id}} </td> <!-- exibir o id -->
+        <td>{{nome}} </td> <!-- exibir o nome -->
+        <td>{{valor}} </td> <!-- exibir o valor -->
+        <td>{{quantidade}}</td> <!-- exibir o quantidade -->
+        <td>
+            <a href="/editar/{{id}}"> <img src="/images/document.png" width="20px"></a>
+            <a href="/excluir/{{id}}" onclick="return confirm('Tem certeza que deseja excluir?')"><img src="/images/trash.png" width="20px"></a>
+        </td>
+    </tr>
+    {{/products}}
+
+</table>
+
+{{>partials/footer}}

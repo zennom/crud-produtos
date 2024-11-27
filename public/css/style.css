@@ -1,0 +1,19 @@
+body {
+    font-family:Helvetica;
+    font-size:13px;
+    margin:20px;
+}
+
+table {
+    margin-top:20px;
+}
+table th {
+    padding:10px;
+    background-color:#669bbc;
+}
+table tr td {
+    padding:10px;
+}
+table tr:hover td {
+    background-color:#EEE;
+}
